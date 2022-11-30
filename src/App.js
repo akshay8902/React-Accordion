@@ -4,11 +4,11 @@ import Down from './down.svg';
 import Up from './up.svg';
 
 function App({
-    faqs, 
-    multipleOpen=false, 
+    faqs,
+    multipleOpen=true,
     defaultOpen=null,
     downSvg,
-    upSvg
+    upSvg,
   }) {
   
   //initial setup

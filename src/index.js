@@ -11,8 +11,8 @@ root.render(
   <React.StrictMode>
     <App 
       faqs={faqs}
-      // multipleOpen
-      // defaultOpen={2}
+      multipleOpen
+      defaultOpen={2}
       downSvg={Down}
       upSvg={Up}
     />
