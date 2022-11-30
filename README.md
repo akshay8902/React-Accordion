@@ -1,1 +1,1 @@
-React boilerplate
+React Accordion

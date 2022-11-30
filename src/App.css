@@ -1,0 +1,21 @@
+.faqContainer {
+  padding: 16px;
+}
+.faqItem {
+  margin-bottom: 16px;
+  padding: 16px;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+.faqQuestion {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.faqIcon {
+  width: 16px;
+  height: 16px;
+}
+.faqAnswer {
+  margin-top: 8px;
+}
