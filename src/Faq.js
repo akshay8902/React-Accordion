@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import './App.css';
 import Down from './down.svg';
 import Up from './up.svg';
 
@@ -11,7 +10,7 @@ function Faq({
     downSvg=undefined,
     upSvg=undefined,
   }) {
-  console.log(Down);
+
   //initial setup
   const initialFaqState = Array(faqs.length).fill(false);
   if (defaultOpen !== null) {
