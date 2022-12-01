@@ -3,14 +3,15 @@ import './App.css';
 import Down from './down.svg';
 import Up from './up.svg';
 
-function App({
+function Faq({
     faqs,
     multipleOpen=true,
     defaultOpen=null,
-    downSvg,
-    upSvg,
+    onClick=function(){},
+    downSvg=undefined,
+    upSvg=undefined,
   }) {
-  
+  console.log(Down);
   //initial setup
   const initialFaqState = Array(faqs.length).fill(false);
   if (defaultOpen !== null) {
@@ -21,7 +22,8 @@ function App({
   const [faqState, setFaqState] = useState(initialFaqState);
   let calculatedFaqState;
 
-  const changeFaqState = (index) => { 
+  const changeFaqState = (index) => {
+    onClick();
     calculatedFaqState = faqState;
     
     if (multipleOpen) {
@@ -55,7 +57,10 @@ function App({
                   className="faqIcon"
                 />
               </div>
-              {faqState[index] && <p className="faqAnswer">{item.answer}</p>}
+              {faqState[index] && (item?.template 
+                ? <div dangerouslySetInnerHTML={{__html: item.template}} className="faqTemplate"></div>
+                : <p className="faqAnswer">{item.answer}</p>
+              )}
             </div>
           )
         })
@@ -64,4 +69,4 @@ function App({
   );
 }
 
-export default App;
+export default Faq;

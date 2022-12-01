@@ -13,6 +13,12 @@ export const faqs = [
   },
   {
     question: "How long will therapy or psychiatry take to make me feel better?",
-    answer: "The duration of your treatment will largely depend on your mental health concern. It may take a few sessions, but in some cases, it might take several sessions to sort out your concerns and help you get better.",
+    template: `
+      <p>Therapy is a safe space for you to talk about what's on your mind. A therapist is a qualified mental health professional who offers support and helps you find the strength to cope with difficult emotions and experiences. Therapists, however, are not equipped to provide you with medication for your concerns.</p>
+      <p>Use <b>template</b> field insted of <s>answer</s></p>
+      <ul>
+        <li>random element</li>
+      </ul>
+    `,
   }
 ]
